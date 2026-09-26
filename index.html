@@ -3,11 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ALEX RIVERA — CREATIVE DEVELOPER</title>
-<meta name="description" content="Portfolio of Alex Rivera — creative developer, Berlin. A theme inspired by Nothing's design language.">
+<title>MAHDI FALAHATI — FRONT-END DEVELOPER</title>
+<meta name="description" content="Portfolio of Mahdi Falahati — front-end developer and deputy frontend team lead. 6.5 years of React, Next.js and TypeScript.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Mahdi Falahati — Front-End Developer">
+<meta property="og:description" content="6.5 years of React, Next.js and TypeScript. Deputy Frontend Team Lead at On-Tech.">
+<meta property="og:type" content="website">
 
 <!-- Theme boot (prevents flash of wrong theme) -->
-<script>try{if(localStorage.getItem('ar-theme')==='light')document.documentElement.classList.add('light')}catch(e){}</script>
+<script>try{if(localStorage.getItem('mf-theme')==='light')document.documentElement.classList.add('light')}catch(e){}</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -191,25 +195,6 @@ html:not(.light) .i-moon{display:none}
 .pv img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.1)}
 @media (hover:none){.pv{display:none}}
 
-/* ============ GLYPH ============ */
-.glyph-grid{display:grid;grid-template-columns:1fr 340px;gap:clamp(36px,6vw,90px);align-items:center}
-.glyph-copy p{color:var(--soft);font-size:17px;line-height:1.75;max-width:52ch;margin-bottom:30px}
-.pats{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
-.sw-row{display:flex;align-items:center;gap:14px}
-.sw-row .label{font-size:11px}
-.phone{width:100%;max-width:320px;height:auto;display:block;margin:0 auto}
-.ph-body{fill:#000;stroke:rgba(255,255,255,.55);stroke-width:1.5}
-.lens{fill:#0a0a0a;stroke:rgba(255,255,255,.28);stroke-width:1.5}
-.lens-in{fill:rgba(255,255,255,.14)}
-.coil{fill:none;stroke:rgba(255,255,255,.14);stroke-width:1.5;stroke-dasharray:3 5}
-.ph-txt{fill:rgba(255,255,255,.45);font-family:var(--dotf);font-size:11px;letter-spacing:.18em}
-.zone .hit{stroke:#fff;stroke-width:32;fill:none;opacity:0;cursor:pointer}
-.zone .led{stroke:#fff;stroke-width:9;fill:none;stroke-linecap:round;opacity:.15;transition:opacity .12s ease}
-.zone:hover .led,.zone .led.on{opacity:1;filter:drop-shadow(0 0 9px rgba(255,255,255,.85))}
-.zone[data-z="d"] .led{stroke-dasharray:100;stroke-dashoffset:0}
-.glyph-note{margin-top:22px;font-family:var(--dotf);font-size:10px;letter-spacing:.16em;color:var(--dim)}
-@media (max-width:900px){.glyph-grid{grid-template-columns:1fr}.phone{max-width:280px}}
-
 /* ============ RECORD ============ */
 .rec{display:grid;grid-template-columns:170px 1fr auto;gap:18px;align-items:baseline;padding:26px 0;border-bottom:1px dotted var(--faint);transition:padding-left .25s ease,border-color .35s}
 .rec:first-of-type{border-top:1px dotted var(--faint)}
@@ -245,6 +230,75 @@ html:not(.light) .i-moon{display:none}
 .lb-cap{margin-top:14px;font-family:var(--dotf);font-size:11px;letter-spacing:.2em;color:rgba(255,255,255,.6);text-align:center}
 .lb-x{position:fixed;top:24px;right:24px;border-color:#fff;color:#fff}
 .lb-x:hover{background:#fff;color:#000}
+
+/* ============ SKILLS ============ */
+.sk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:clamp(16px,2.4vw,28px) clamp(28px,5vw,72px)}
+.sk{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:8px;padding:15px 0;border-bottom:1px dotted var(--faint);transition:border-color .35s}
+.sk .s-n{font-family:var(--dotf);font-size:13px;letter-spacing:.1em}
+.sk .s-l{font-family:var(--dotf);font-size:10px;letter-spacing:.16em;color:var(--dim)}
+.segs{grid-column:1/-1;display:flex;gap:5px}
+.segs i{flex:1;height:7px;background:var(--faint);transition:background-color .4s ease}
+.segs i.on{background:var(--fg)}
+.sk-note{margin-top:clamp(30px,5vh,46px);font-family:var(--dotf);font-size:10px;letter-spacing:.16em;color:var(--dim);line-height:2}
+
+/* ============ GLYPH COMPOSER ============ */
+.glyph-grid{display:grid;grid-template-columns:1fr .8fr;gap:clamp(36px,8vw,110px);align-items:center}
+.glyph-copy p{color:var(--soft);font-size:17px;line-height:1.75;max-width:54ch}
+.pats{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}
+.sw-row{display:flex;align-items:center;gap:14px;margin:30px 0 22px}
+.glyph-note{font-family:var(--dotf);font-size:10px!important;letter-spacing:.15em;color:var(--dim)!important;line-height:1.8!important}
+.phone{display:block;width:min(100%,320px);height:auto;margin:0 auto;overflow:visible}
+.ph-body{fill:var(--bg);stroke:var(--faint);stroke-width:2}
+.lens{fill:var(--bg);stroke:var(--dim);stroke-width:2}
+.lens-in{fill:var(--dim)}
+.coil{fill:none;stroke:var(--faint);stroke-width:2}
+.zone{cursor:pointer;outline:none}
+.zone .hit{fill:none;stroke:transparent;stroke-width:24;pointer-events:stroke}
+.zone .led{fill:none;stroke:var(--dim);stroke-width:5;stroke-linecap:round;stroke-linejoin:round;transition:stroke .18s ease,filter .18s ease;pointer-events:none}
+.zone[data-z="a"] .led{stroke-width:4}
+.zone[data-z="d"] .led{stroke-dasharray:100;stroke-dashoffset:0}
+.zone .led.on{stroke:var(--fg);filter:drop-shadow(0 0 5px var(--fg))}
+.zone:focus-visible .hit{stroke:var(--red)}
+.ph-txt{fill:var(--dim);font-family:var(--dotf);font-size:8px;letter-spacing:1.4px}
+@media (max-width:760px){.glyph-grid{grid-template-columns:1fr}.phone{width:min(72%,280px)}}
+
+/* ============ EXPERIENCE ============ */
+.xp{border-top:1px dotted var(--faint);transition:border-color .35s}
+.xp:last-of-type{border-bottom:1px dotted var(--faint)}
+.xp-head{display:grid;grid-template-columns:172px 1fr auto 1.5rem;gap:clamp(10px,2vw,20px);align-items:center;width:calc(100% + 28px);margin:0 -14px;padding:clamp(16px,2.6vh,24px) 14px;text-align:left;transition:background-color .2s,color .2s}
+.xp-head:hover{background:var(--fg);color:var(--bg)}
+.xp-when{font-family:var(--dotf);font-size:11px;letter-spacing:.13em;color:var(--dim);display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.xp-role{font-family:var(--dotf);font-size:clamp(15px,2vw,19px);letter-spacing:.02em;line-height:1.35}
+.xp-where{font-size:12px;color:var(--dim);letter-spacing:.04em;text-align:right;line-height:1.5}
+.xp-x{display:grid;place-items:center;color:var(--dim);transition:transform .3s cubic-bezier(.4,1.4,.4,1)}
+.xp-x svg{width:15px;height:15px}
+.xp.open .xp-x{transform:rotate(45deg)}
+.xp-head:hover .xp-when,.xp-head:hover .xp-where,.xp-head:hover .xp-x{color:inherit}
+.xp-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s cubic-bezier(.4,0,.2,1)}
+.xp.open .xp-body{grid-template-rows:1fr}
+.xp-inner{overflow:hidden}
+.xp-c{padding:6px 0 clamp(26px,4vh,38px);max-width:82ch}
+.xp-c ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:4px}
+.xp-c li{position:relative;padding-left:24px;color:var(--soft);font-size:15px;line-height:1.68}
+.xp-c li::before{content:'';position:absolute;left:3px;top:.6em;width:7px;height:7px;border-radius:50%;background:var(--red)}
+.xp-desc{color:var(--soft);font-size:15px;line-height:1.7;margin-bottom:16px;max-width:72ch}
+.xp-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.xp-tags span{font-family:var(--dotf);font-size:10px;letter-spacing:.14em;border:1px solid var(--faint);border-radius:999px;padding:5px 11px;color:var(--dim)}
+.badge{font-family:var(--dotf);font-size:9px;letter-spacing:.16em;border:1px solid var(--red);color:var(--red);border-radius:999px;padding:2px 8px;line-height:1.6;white-space:nowrap}
+.metanote{display:flex;flex-wrap:wrap;gap:clamp(16px,4vw,54px);margin-top:clamp(32px,5vh,52px);padding-top:22px;border-top:1px dotted var(--faint);font-family:var(--dotf);font-size:10px;letter-spacing:.16em;color:var(--dim)}
+@media (max-width:820px){
+  .xp-head{grid-template-columns:1fr 1.5rem;row-gap:5px}
+  .xp-when{grid-column:1/-1}
+  .xp-where{grid-column:1;text-align:left}
+}
+
+/* ============ ALSO SHIPPED ============ */
+.also{margin-top:clamp(36px,6vh,64px)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.chip{font-family:var(--dotf);font-size:11px;letter-spacing:.12em;border:1px solid var(--faint);border-radius:999px;padding:8px 15px;color:var(--dim);display:inline-flex;align-items:center;gap:9px;transition:border-color .2s,color .2s}
+.chip b{font-weight:400;color:var(--fg)}
+.chip svg{width:12px;height:12px}
+a.chip:hover{border-color:var(--fg);color:var(--fg)}
 </style>
 </head>
 <body>
@@ -252,12 +306,13 @@ html:not(.light) .i-moon{display:none}
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
   <div class="wrap nav-in">
-    <a href="#top" class="logo">AR-01</a>
+    <a href="#top" class="logo">MF-01</a>
     <nav class="nlinks">
       <a class="nlink" href="#about">ABOUT</a>
       <a class="nlink" href="#work">WORK</a>
+      <a class="nlink" href="#skills">SKILLS</a>
       <a class="nlink" href="#glyph">GLYPH</a>
-      <a class="nlink" href="#record">RECORD</a>
+      <a class="nlink" href="#record">EXPERIENCE</a>
       <a class="nlink" href="#contact">CONTACT</a>
     </nav>
     <div class="nav-right">
@@ -273,19 +328,21 @@ html:not(.light) .i-moon{display:none}
 <!-- mobile menu -->
 <div class="menu" id="menu">
   <div class="menu-top">
-    <span class="logo">AR-01</span>
+    <span class="logo">MF-01</span>
     <button class="icobtn" id="menuClose" aria-label="Close menu"><i data-lucide="x"></i></button>
   </div>
   <nav class="menu-links">
     <a href="#about">ABOUT <span>N-02</span></a>
     <a href="#work">WORK <span>N-03</span></a>
-    <a href="#glyph">GLYPH <span>N-04</span></a>
-    <a href="#record">RECORD <span>N-05</span></a>
-    <a href="#contact">CONTACT <span>N-06</span></a>
+    <a href="#skills">SKILLS <span>N-04</span></a>
+    <a href="#glyph">GLYPH <span>N-05</span></a>
+    <a href="#record">EXPERIENCE <span>N-06</span></a>
+    <a href="#contact">CONTACT <span>N-07</span></a>
   </nav>
   <div class="menu-foot">
-    <a class="btn sm" href="mailto:hello@alexrivera.dev"><i data-lucide="mail"></i>EMAIL</a>
-    <a class="btn sm" href="https://github.com" target="_blank" rel="noopener"><i data-lucide="github"></i>GITHUB</a>
+    <a class="btn sm" href="mailto:falahati.mahdi@yahoo.com"><i data-lucide="mail"></i>EMAIL</a>
+    <a class="btn sm" href="https://github.com/mahdi4k" target="_blank" rel="noopener"><i data-lucide="github"></i>GITHUB</a>
+    <a class="btn sm" href="tel:+989351510925"><i data-lucide="phone"></i>CALL</a>
   </div>
 </div>
 
@@ -296,12 +353,12 @@ html:not(.light) .i-moon{display:none}
     <div class="wrap">
       <div class="hero-top rv">
         <span class="status"><span class="pulse"></span>OPEN FOR WORK</span>
-        <span class="hero-meta">PORTFOLIO — 2025</span>
+        <span class="hero-meta">FRONT-END DEVELOPER — 2026</span>
       </div>
-      <canvas id="board" role="img" aria-label="Interactive dot-matrix display cycling the words DESIGN, CODE, MOTION"></canvas>
+      <canvas id="board" role="img" aria-label="Interactive dot-matrix display cycling the words REACT, NEXTJS, DESIGN"></canvas>
       <div class="hero-under rv" style="--d:.15s">
-        <h1 class="lede">Alex Rivera — creative developer. I build fast, tactile interfaces for people who value restraint. <em>Less, but better.</em></h1>
-        <div class="coords">52.5200°N — 13.4050°E<br>BERLIN, DE</div>
+        <h1 class="lede">Mahdi Falahati — front-end developer. Six and a half years building scalable, multilingual interfaces with React, Next.js and TypeScript. <em>Deputy Frontend Team Lead at On-Tech.</em></h1>
+        <div class="coords">REMOTE / GLOBAL</div>
       </div>
       <div class="hero-foot rv" style="--d:.3s">
         <a href="#about" class="scrolldown"><i data-lucide="arrow-down"></i>SCROLL</a>
@@ -314,20 +371,20 @@ html:not(.light) .i-moon{display:none}
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
       <div class="tgroup">
-        <span class="tk">CREATIVE DEVELOPER</span><span class="dotsep"></span>
-        <span class="tk">INTERFACE DESIGN</span><span class="dotsep red"></span>
-        <span class="tk">WEBGL &amp; MOTION</span><span class="dotsep"></span>
+        <span class="tk">FRONT-END DEVELOPER</span><span class="dotsep"></span>
+        <span class="tk">REACT &amp; NEXT.JS</span><span class="dotsep red"></span>
+        <span class="tk">TYPESCRIPT</span><span class="dotsep"></span>
         <span class="tk">DESIGN SYSTEMS</span><span class="dotsep"></span>
-        <span class="tk">TYPOGRAPHY</span><span class="dotsep red"></span>
-        <span class="tk">AVAILABLE Q3 2025</span><span class="dotsep"></span>
+        <span class="tk">RTL &amp; MULTILINGUAL</span><span class="dotsep red"></span>
+        <span class="tk">6.5 YEARS EXPERIENCE</span><span class="dotsep"></span>
       </div>
       <div class="tgroup">
-        <span class="tk">CREATIVE DEVELOPER</span><span class="dotsep"></span>
-        <span class="tk">INTERFACE DESIGN</span><span class="dotsep red"></span>
-        <span class="tk">WEBGL &amp; MOTION</span><span class="dotsep"></span>
+        <span class="tk">FRONT-END DEVELOPER</span><span class="dotsep"></span>
+        <span class="tk">REACT &amp; NEXT.JS</span><span class="dotsep red"></span>
+        <span class="tk">TYPESCRIPT</span><span class="dotsep"></span>
         <span class="tk">DESIGN SYSTEMS</span><span class="dotsep"></span>
-        <span class="tk">TYPOGRAPHY</span><span class="dotsep red"></span>
-        <span class="tk">AVAILABLE Q3 2025</span><span class="dotsep"></span>
+        <span class="tk">RTL &amp; MULTILINGUAL</span><span class="dotsep red"></span>
+        <span class="tk">6.5 YEARS EXPERIENCE</span><span class="dotsep"></span>
       </div>
     </div>
   </div>
@@ -341,17 +398,22 @@ html:not(.light) .i-moon{display:none}
       </div>
       <div class="about-grid">
         <div class="about-copy rv">
-          <p>I'm Alex — a creative developer based in Berlin. For the last eight years I've been building interfaces where the craft is in <strong>what's left out</strong>: no noise, no decoration, only structure that works.</p>
-          <p>Currently leading the web team at <strong>Studio Mono</strong>. Before that I shipped products for agencies and startups across Europe. I care about performance budgets, typography, and the first 400 milliseconds of any interaction.</p>
-          <p>Off the clock I photograph brutalist architecture and restore dot-matrix printers.</p>
+          <p>I'm Mahdi — a front-end developer with <strong>6.5 years</strong> of professional experience building web products from the first commit to production. Today I serve as <strong>Deputy Frontend Team Lead at On-Tech</strong>, supporting frontend architecture, reviewing pull requests and working alongside a team of four developers.</p>
+          <p>My day-to-day is <strong>React, Next.js and TypeScript</strong>: reusable design systems, role-based routing and authentication middleware, and multilingual products with locale-aware routing and full RTL support. I care about maintainable structure, type safety, and interfaces that feel effortless in both Persian and English.</p>
+          <p>I also work with <strong>AI coding agents</strong>, implementing features against conventions defined in an <strong>AGENTS.md</strong> standard — and I'm comfortable owning a product end to end, from the MySQL schema up to the last pixel.</p>
         </div>
         <div class="rv" style="--d:.15s">
-          <div class="specs-label label">SPECIFICATIONS</div>
+          <div class="specs-label label">PERSONAL INFORMATION</div>
           <div class="specs">
-            <div class="spec"><span class="k">BASED IN</span><span class="lead"></span><span class="v">BERLIN, DE</span></div>
-            <div class="spec"><span class="k">EXPERIENCE</span><span class="lead"></span><span class="v">8 YEARS</span></div>
-            <div class="spec"><span class="k">SHIPPED</span><span class="lead"></span><span class="v">46 PROJECTS</span></div>
-            <div class="spec"><span class="k">STACK</span><span class="lead"></span><span class="v">TS / REACT / WEBGL / NODE</span></div>
+            <div class="spec"><span class="k">FULL NAME</span><span class="lead"></span><span class="v">MAHDI FALAHATI</span></div>
+            <div class="spec"><span class="k">AGE</span><span class="lead"></span><span class="v">30 YEARS</span></div>
+            <div class="spec"><span class="k">GENDER</span><span class="lead"></span><span class="v">MALE</span></div>
+            <div class="spec"><span class="k">LOCATION</span><span class="lead"></span><span class="v">REMOTE / GLOBAL</span></div>
+            <div class="spec"><span class="k">MARITAL STATUS</span><span class="lead"></span><span class="v">MARRIED</span></div>
+            <div class="spec"><span class="k">MILITARY SERVICE</span><span class="lead"></span><span class="v">EXEMPTED</span></div>
+            <div class="spec"><span class="k">WORK EXPERIENCE</span><span class="lead"></span><span class="v">6.5 YEARS</span></div>
+            <div class="spec"><span class="k">ENGLISH</span><span class="lead"></span><span class="v">INTERMEDIATE</span></div>
+            <div class="spec"><span class="k">SALARY EXPECTATION</span><span class="lead"></span><span class="v">35 — 45M TOMANS</span></div>
             <div class="spec"><span class="k">STATUS</span><span class="lead"></span><span class="v red">OPEN FOR WORK</span></div>
           </div>
         </div>
@@ -364,9 +426,30 @@ html:not(.light) .i-moon{display:none}
     <div class="wrap">
       <div class="shead rv">
         <h2>SELECTED WORK</h2>
-        <span class="count">(05) 2022 — 2024</span>
+        <span class="count">(04 LIVE) 2020 — 2026</span>
       </div>
       <div id="plist"></div>
+      <div class="also rv">
+        <div class="specs-label label">ALSO SHIPPED</div>
+        <div class="chips">
+          <span class="chip"><b>CANOBO</b> 2022</span>
+          <span class="chip"><b>DAR MARKAZ</b> 2021 — 2022</span>
+          <span class="chip"><b>GENERAL KHODRO</b> 2020</span>
+        </div>
+        <p class="sk-note">PRIVATE OR CLIENT-OWNED BUILDS — SOURCE CODE AND WALKTHROUGH AVAILABLE ON REQUEST.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="shead rv">
+        <h2>SKILLS</h2>
+        <span class="label">N-(04) / TOOLKIT</span>
+      </div>
+      <div class="sk-grid" id="skillList"></div>
+      <p class="sk-note rv">ALSO WORKED WITH — MANTINE · TAILWIND CSS · RTK QUERY · TANSTACK QUERY · REACT HOOK FORM · GRAPHQL / APOLLO · NEXT-INTL · SCSS · VUETIFY · QUASAR · PINIA · LARAVEL 10 · MYSQL · HEADLESS WORDPRESS · GIT / GITLAB</p>
     </div>
   </section>
 
@@ -375,7 +458,7 @@ html:not(.light) .i-moon{display:none}
     <div class="wrap">
       <div class="shead rv">
         <h2>GLYPH COMPOSER</h2>
-        <span class="label">N-(04) / HARDWARE</span>
+        <span class="label">N-(05) / HARDWARE</span>
       </div>
       <div class="glyph-grid">
         <div class="glyph-copy rv">
@@ -408,10 +491,10 @@ html:not(.light) .i-moon{display:none}
             <circle class="coil" cx="120" cy="330" r="16"/>
             <circle class="coil" cx="120" cy="330" r="28"/>
             <circle class="coil" cx="120" cy="330" r="40"/>
-            <g class="zone" data-z="a"><use href="#za" class="hit"/><use href="#za" class="led"/></g>
-            <g class="zone" data-z="b"><use href="#zb" class="hit"/><use href="#zb" class="led"/></g>
-            <g class="zone" data-z="c"><use href="#zc" class="hit"/><use href="#zc" class="led"/></g>
-            <g class="zone" data-z="d"><use href="#zd" class="hit"/><use href="#zd" class="led"/></g>
+            <g class="zone" data-z="a" tabindex="0" role="button" aria-label="Play glyph zone A"><use href="#za" class="hit"/><use href="#za" class="led"/></g>
+            <g class="zone" data-z="b" tabindex="0" role="button" aria-label="Play glyph zone B"><use href="#zb" class="hit"/><use href="#zb" class="led"/></g>
+            <g class="zone" data-z="c" tabindex="0" role="button" aria-label="Play glyph zone C"><use href="#zc" class="hit"/><use href="#zc" class="led"/></g>
+            <g class="zone" data-z="d" tabindex="0" role="button" aria-label="Play glyph zone D"><use href="#zd" class="hit"/><use href="#zd" class="led"/></g>
             <text class="ph-txt" x="30" y="502">AR-01 / GLYPH</text>
           </svg>
         </div>
@@ -419,33 +502,50 @@ html:not(.light) .i-moon{display:none}
     </div>
   </section>
 
-  <!-- ============ RECORD ============ -->
+  <!-- ============ EXPERIENCE ============ -->
   <section id="record">
     <div class="wrap">
       <div class="shead rv">
-        <h2>RECORD</h2>
-        <span class="label">N-(05) / EXPERIENCE</span>
+        <h2>EXPERIENCE</h2>
+        <span class="label">N-(06) / CAREER</span>
       </div>
-      <div class="rec rv"><span class="r-when">2022 — NOW</span><span class="r-role">SENIOR CREATIVE DEVELOPER</span><span class="r-where">Studio Mono — Berlin</span></div>
-      <div class="rec rv" style="--d:.06s"><span class="r-when">2019 — 2022</span><span class="r-role">FRONTEND ENGINEER</span><span class="r-where">Fieldwork — Amsterdam</span></div>
-      <div class="rec rv" style="--d:.12s"><span class="r-when">2017 — 2019</span><span class="r-role">DESIGNER &amp; DEVELOPER</span><span class="r-where">Independent — Remote</span></div>
+      <div id="xpList"></div>
+      <div class="metanote rv">
+        <span>LAST UPDATE — 25 SEP 2026</span>
+        <span>REFERENCE ID — JV-24283643</span>
+        <span>10 ROLES — 2020 → NOW</span>
+      </div>
+
+      <div class="also rv">
+        <div class="specs-label label">EDUCATION</div>
+        <div class="specs">
+          <div class="spec"><span class="k">BACHELOR — SOFTWARE ENGINEERING</span><span class="lead"></span><span class="v">2015 — 2019</span></div>
+        </div>
+        <p class="sk-note">UNIVERSITY OF SCIENCE AND ARTS OF YAZD — YAZD, IRAN</p>
+      </div>
     </div>
   </section>
 
   <!-- ============ CONTACT ============ -->
   <section id="contact">
     <div class="wrap">
-      <span class="label rv">N-(06) / CONTACT</span>
+      <span class="label rv">N-(07) / CONTACT</span>
       <h2 class="giant rv">LET'S TALK<span class="red">.</span></h2>
-      <p class="c-sub rv" style="--d:.1s">Have a project that needs restraint and craft? Tell me everything — I reply within 24 hours.</p>
+      <p class="c-sub rv" style="--d:.1s">Open to front-end and frontend-lead roles, and to freelance product work. Tell me what you're building — I reply within 24 hours.</p>
       <div class="email-line rv" style="--d:.15s">
-        <a class="email" href="mailto:hello@alexrivera.dev">hello@alexrivera.dev</a>
+        <a class="email" href="mailto:falahati.mahdi@yahoo.com">falahati.mahdi@yahoo.com</a>
         <button class="btn" id="copyBtn"><i data-lucide="copy"></i>COPY EMAIL</button>
       </div>
       <div class="socials rv" style="--d:.2s">
-        <a class="btn sm" href="https://github.com" target="_blank" rel="noopener"><i data-lucide="github"></i>GITHUB</a>
-        <a class="btn sm" href="https://dribbble.com" target="_blank" rel="noopener"><i data-lucide="dribbble"></i>DRIBBBLE</a>
-        <a class="btn sm" href="https://linkedin.com" target="_blank" rel="noopener"><i data-lucide="linkedin"></i>LINKEDIN</a>
+        <a class="btn sm" href="https://github.com/mahdi4k" target="_blank" rel="noopener"><i data-lucide="github"></i>GITHUB</a>
+        <a class="btn sm" href="tel:+989351510925"><i data-lucide="phone"></i>CALL +98 935 151 0925</a>
+        <a class="btn sm" href="sms:+989351510925"><i data-lucide="message-square"></i>SMS</a>
+      </div>
+      <div class="metanote rv" style="--d:.25s">
+        <span>MOBILE — 09351510925</span>
+        <span>EMAIL — <a href="mailto:falahati.mahdi@yahoo.com">falahati.mahdi@yahoo.com</a></span>
+        <span>LOCATION — REMOTE / GLOBAL</span>
+        <span>ADDRESS — AVAILABLE UPON REQUEST</span>
       </div>
     </div>
   </section>
@@ -453,8 +553,8 @@ html:not(.light) .i-moon{display:none}
 
 <footer class="footer">
   <div class="wrap foot-in">
-    <span>© 2025 ALEX RIVERA</span>
-    <span class="foot-note">A FAN-MADE THEME INSPIRED BY NOTHING'S DESIGN LANGUAGE. ALL TRADEMARKS BELONG TO NOTHING TECHNOLOGY LTD.</span>
+    <span>© 2026 MAHDI FALAHATI</span>
+    <span class="foot-note">MADE FOR PRODUCT TEAMS — A THEME INSPIRED BY NOTHING'S DESIGN LANGUAGE. ALL TRADEMARKS BELONG TO NOTHING TECHNOLOGY LTD.</span>
     <button class="icobtn" id="topBtn" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
   </div>
 </footer>
@@ -476,24 +576,131 @@ html:not(.light) .i-moon{display:none}
 
 <script>
 /* =====================================================
-   Replace the data below with your own content.
+   Mahdi Falahati — portfolio data
    ==================================================== */
 const PROJECTS=[
-  {idx:'001',name:'MONO',cat:'E-COMMERCE',year:'2024',seed:'mono-ar',
-   desc:'Headless storefront for a Berlin fashion label — sub-second page transitions, a WebGL product viewer and a 98 Lighthouse score across the board.',
-   tags:['NEXT.JS','WEBGL','HEADLESS CMS']},
-  {idx:'002',name:'PULSE',cat:'PRODUCT',year:'2024',seed:'pulse-ar',
-   desc:'Realtime collaboration canvas for a fintech — CRDT-backed state, 60fps rendering on ten-thousand-node boards, websocket backbone.',
-   tags:['REACT','CRDT','WEBSOCKETS']},
-  {idx:'003',name:'FIELD NOTES',cat:'EDITORIAL',year:'2023',seed:'fieldnotes-ar',
-   desc:'Publishing platform for long-form climate journalism. Variable fonts, offline reading, and print styles people actually use.',
-   tags:['ASTRO','SERVICE WORKER','VARIABLE TYPE']},
-  {idx:'004',name:'ARCHIVE 44',cat:'CULTURE',year:'2023',seed:'archive-ar',
-   desc:'Digital archive for a photography museum — 40,000 negatives navigable as one infinite canvas, zoomable from wall to grain.',
-   tags:['CANVAS','IIIF','NODE']},
-  {idx:'005',name:'KILO',cat:'IDENTITY',year:'2022',seed:'kilo-ar',
-   desc:'Brand and website for an industrial design studio. One typeface, two colors, zero stock photography.',
-   tags:['ART DIRECTION','ELEVENTY','CSS']},
+  {idx:'001',name:'OMID NIK',cat:'FINTECH / WEB',year:'LIVE',
+    img:'assets/shots/omidnik.png',url:'http://omidnik.ir/',
+   desc:'A credit-scoring and purchase-consultation service — visitors check banking and Silfam credit status, then request a tailored purchase plan.',
+   tags:['REACT','REST API','RESPONSIVE UI']},
+  {idx:'002',name:'RIGORA',cat:'PC BUILDER / E-COMMERCE',year:'2023 — NOW',
+    img:'assets/shots/rigora.png',url:'https://www.rigora.ir/',
+   desc:'A PC assembly platform in the spirit of pcbuilder.net — visitors pick parts, get a compatibility-checked custom build and post ads for components. I own the whole stack: Next.js App Router with TypeScript on the front, Laravel 10 and MySQL behind it.',
+   tags:['NEXT.JS','TYPESCRIPT','RTK QUERY','LARAVEL 10','MYSQL']},
+    {idx:'003',name:'SILFAM',cat:'FINTECH / SILVER INVESTMENT',year:'LIVE',
+    img:'assets/shots/silfam.png',url:'https://silfam.ir',
+    desc:'A modern platform for buying, selling and saving silver online, with live pricing and a streamlined purchase experience.',
+    tags:['REACT','FINTECH','E-COMMERCE','RESPONSIVE UI']},
+  {idx:'004',name:'BITA TRACKER',cat:'DASHBOARD / LOGISTICS',year:'2022',
+    img:'assets/shots/bitatracker.png',url:'https://bitatracker.ir/',
+   desc:'Vehicle tracking system for Bistun Kavir — a REST-driven dashboard for following fleet position and status in real time.',
+   tags:['VUETIFY','REST API','JAVASCRIPT','TAILWIND CSS']},
+];
+
+const SKILLS=[
+  {n:'REACT',l:3},{n:'NEXT.JS',l:3},{n:'TYPESCRIPT',l:3},{n:'JAVASCRIPT',l:3},
+  {n:'VUEJS',l:3},{n:'LARAVEL',l:2},{n:'FIGMA',l:2},{n:'ADOBE XD',l:2},{n:'NODE.JS',l:1},
+];
+
+const EXPERIENCE=[
+  {when:'JUL 2025 — NOW',dur:'1 YR 2 MO',now:true,
+   role:'DEPUTY FRONTEND TEAM LEAD',org:'ON-TECH',city:'YAZD, IRAN',
+   desc:'Supporting frontend architecture and helping shape how a four-developer team ships.',
+   bullets:[
+     'Supported frontend architecture, pull request reviews, and a team of four developers.',
+     'Built a reusable design system with 50+ Mantine UI components.',
+     'Designed role-based routing and authentication middleware.',
+     'Implemented multilingual support with locale-aware routing and RTL compatibility using next-intl.',
+     'Built complex forms with React Hook Form and managed server state with TanStack Query.',
+     'Used AI coding agents to implement features using standards defined in AGENTS.md.',
+   ],
+   tags:['NEXT.JS','TYPESCRIPT','MANTINE','NEXT-INTL','TANSTACK QUERY','RHF','RTL']},
+
+  {when:'APR 2025 — JUN 2025',dur:'2 MO',
+   role:'FRONT-END DEVELOPER',org:'PISHGAMAN TOSE TEJARAT FARDA',city:'TEHRAN, IRAN',
+   bullets:[
+     'Implemented an OTP-based authentication system with separate login pages for users and staff, using one-time passwords sent via email.',
+     'Built a comprehensive ticketing module supporting audio and image attachments, multiple ticket statuses, and role-based access for users and staff.',
+     'Developed a knowledge base and article management system with category management, rich-text editing, image uploads and search.',
+     'Implemented advanced admin modules — user management, lead tracking and customer records — on a scalable, maintainable panel.',
+   ],
+   tags:['NEXT.JS','GRAPHQL','APOLLO','TAILWIND CSS','RHF','TYPESCRIPT']},
+
+  {when:'OCT 2023 — NOW',dur:'2 YR 11 MO',now:true,
+   role:'FRONT-END DEVELOPER (OWNER)',org:'RIGORA',city:'YAZD, IRAN',
+   desc:'Owning a PC-building platform end to end — from the MySQL schema to the last pixel.',
+   bullets:[
+     'Shipped a PC assembly section similar to pcbuilder.net, enabling fully custom builds.',
+     'Built ad posting for PC parts and components.',
+     'Implemented SMS OTP authentication for user login.',
+     'Delivered a blog powered by headless WordPress CMS.',
+     'Built the front end with the Next.js App Router and TypeScript for a seamless, responsive experience.',
+     'Leveraged RTK Query for efficient data fetching and state management.',
+     'Designed and implemented the back end with Laravel 10 and MySQL, managing the entire project independently.',
+   ],
+   tags:['NEXT.JS','TYPESCRIPT','RTK QUERY','LARAVEL 10','MYSQL','HEADLESS WORDPRESS']},
+
+  {when:'MAY 2023 — MAR 2025',dur:'1 YR 10 MO',
+   role:'FRONT-END DEVELOPER',org:'ROMINA INNOVATOR THINKERS',city:'YAZD, IRAN',
+   desc:'An agile platform built to help startups grow faster and at lower cost.',
+   bullets:[
+     'Replaced Formik/Yup with Mantine for forms, achieving a 10% package size reduction and improved development efficiency.',
+     'Replaced Axios with RTK Query, enhancing data fetching performance and state management.',
+     'Developed a visually appealing, user-friendly and responsive landing page with React and SCSS, following a Figma design.',
+     'Designed and implemented a Kanban board with React-Grid-Layout, including drag-and-drop and real-time updates.',
+   ],
+   tags:['REACT','MANTINE','RTK QUERY','SCSS','FIGMA','REACT-GRID-LAYOUT']},
+
+  {when:'MAR 2023 — JUL 2023',dur:'4 MO',
+   role:'FRONT-END DEVELOPER',org:'AROITECH',city:'TEHRAN, IRAN',
+   desc:'Remote, task-oriented work with weekly meetings between team members.',
+   bullets:[
+     'Built a product for managing and displaying internet-infrastructure traffic algorithms on a map.',
+     'Worked remotely and task-oriented, reviewing progress in weekly team meetings.',
+   ],
+   tags:['REACT','TYPESCRIPT','REDUX TOOLKIT']},
+
+  {when:'OCT 2022 — APR 2023',dur:'6 MO',
+   role:'FRONT-END DEVELOPER',org:'DSTODS',city:'YAZD, IRAN',
+   bullets:[
+     'Worked with Vue 3, a GraphQL API and JavaScript.',
+     'Implemented state management with Pinia.',
+     'Built the category, province, city and village selection flows, per-location ad listings, the filter and features section, and user login by mobile number.',
+     'Used Git and GitLab for version control.',
+   ],
+   tags:['VUE 3','GRAPHQL','PINIA','JAVASCRIPT','GITLAB']},
+
+  {when:'MAR 2022 — SEP 2022',dur:'6 MO',
+   role:'FRONT-END DEVELOPER',org:'BISTUN KAVIR',city:'YAZD, IRAN',
+   bullets:[
+     'Worked with the Vuetify framework, a REST API and JavaScript.',
+     'Developed the front end with HTML5, CSS3 and JavaScript, leveraging the Tailwind CSS framework.',
+     'Used Git, GitLab and Trello for version control and task tracking.',
+   ],
+   tags:['VUE','VUETIFY','REST API','TAILWIND CSS']},
+
+  {when:'MAR 2021 — FEB 2022',dur:'11 MO',
+   role:'FRONT-END DEVELOPER',org:'AVID RAYAN',city:'YAZD, IRAN',
+   bullets:[
+     'Developed applications using Laravel and Vue.js.',
+     'Worked with the Quasar framework, a REST API and JavaScript.',
+     'Used Git, GitLab and ClickUp for version control and task tracking.',
+   ],
+   tags:['LARAVEL','VUE.JS','QUASAR','REST API']},
+
+  {when:'MAR 2020 — MAR 2021',dur:'1 YR',
+   role:'FRONT-END DEVELOPER',org:'HIRAD KAVIR',city:'YAZD, IRAN',
+   bullets:[
+     'Designed and developed the front end with Bootstrap, HTML and CSS — 100% responsive.',
+   ],
+   tags:['BOOTSTRAP','HTML5','CSS3']},
+
+  {when:'APR 2020 — FEB 2024',dur:'3 YR 10 MO',
+   role:'FRONT-END DEVELOPER',org:'FREELANCE',city:'TEHRAN, IRAN',
+   bullets:[
+     'Delivered independent client projects alongside full-time roles.',
+   ],
+   tags:['REACT','VUE','JAVASCRIPT']},
 ];
 
 /* ============ helpers ============ */
@@ -508,7 +715,7 @@ tickClock();setInterval(tickClock,1000);
 /* ============ theme ============ */
  $('#themeBtn').addEventListener('click',()=>{
   const light=document.documentElement.classList.toggle('light');
-  try{localStorage.setItem('ar-theme',light?'light':'dark')}catch(e){}
+  try{localStorage.setItem('mf-theme',light?'light':'dark')}catch(e){}
 });
 
 /* ============ nav state / mobile menu ============ */
@@ -525,7 +732,7 @@ let toastT;
 function toast(msg){$('#toastMsg').textContent=msg;$('#toast').classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>$('#toast').classList.remove('show'),2200);}
 
 /* ============ copy email ============ */
-const EMAIL='hello@alexrivera.dev';
+const EMAIL='falahati.mahdi@yahoo.com';
  $('#copyBtn').addEventListener('click',()=>{
   const done=()=>toast('EMAIL COPIED — TALK SOON');
   const fallback=()=>{const t=document.createElement('textarea');t.value=EMAIL;document.body.appendChild(t);t.select();try{document.execCommand('copy');done();}catch(e){toast(EMAIL);}t.remove();};
@@ -550,7 +757,7 @@ addEventListener('keydown',e=>{if(e.key==='Escape'){closeLB();setMenu(false);}})
    ==================================================== */
 (function(){
   const cv=$('#board'),ctx=cv.getContext('2d');
-  const WORDS=['DESIGN','CODE','MOTION'];
+  const WORDS=['REACT','NEXTJS','DESIGN'];
 
   /* 5x7 pixel font, each row = 5-bit number */
   const F={'A':[14,17,17,31,17,17,17],'B':[30,17,17,30,17,17,30],'C':[14,17,16,16,16,17,14],'D':[30,17,17,17,17,17,30],'E':[31,16,16,30,16,16,31],'F':[31,16,16,30,16,16,16],'G':[14,17,16,23,17,17,15],'H':[17,17,17,31,17,17,17],'I':[14,4,4,4,4,4,14],'J':[7,2,2,2,2,18,12],'K':[17,18,20,24,20,18,17],'L':[16,16,16,16,16,16,31],'M':[17,27,21,21,17,17,17],'N':[17,25,21,19,17,17,17],'O':[14,17,17,17,17,17,14],'P':[30,17,17,30,16,16,16],'Q':[14,17,17,17,21,18,13],'R':[30,17,17,30,20,18,17],'S':[15,16,16,14,1,1,30],'T':[31,4,4,4,4,4,4],'U':[17,17,17,17,17,17,14],'V':[17,17,17,17,17,10,4],'W':[17,17,17,21,21,27,17],'X':[17,17,10,4,10,17,17],'Y':[17,17,10,4,4,4,4],'Z':[31,1,2,4,8,16,31],' ':[0,0,0,0,0,0,0]};
@@ -635,7 +842,7 @@ addEventListener('keydown',e=>{if(e.key==='Escape'){closeLB();setMenu(false);}})
 (function(){
   const plist=$('#plist');
   plist.innerHTML=PROJECTS.map((p,i)=>`
-  <article class="project rv" data-seed="${p.seed}" data-name="${p.name}" style="--d:${(i*0.06).toFixed(2)}s">
+  <article class="project rv" data-img="${p.img}" data-name="${p.name}" style="--d:${(i*0.06).toFixed(2)}s">
     <button class="project-head" aria-expanded="false">
       <span class="p-idx">${p.idx}</span>
       <span class="p-name">${p.name}</span>
@@ -649,10 +856,10 @@ addEventListener('keydown',e=>{if(e.key==='Escape'){closeLB();setMenu(false);}})
         <div class="tags">${p.tags.map(t=>'<span>'+t+'</span>').join('')}</div>
         <div class="p-actions">
           <button class="btn sm view"><i data-lucide="maximize-2"></i>VIEW</button>
-          <a class="btn sm" href="https://github.com" target="_blank" rel="noopener"><i data-lucide="arrow-up-right"></i>SOURCE</a>
+          <a class="btn sm" href="${p.url}" target="_blank" rel="noopener"><i data-lucide="arrow-up-right"></i>VISIT SITE</a>
         </div>
       </div>
-      <figure class="p-fig"><img loading="lazy" src="https://picsum.photos/seed/${p.seed}/900/620.jpg" alt="${p.name} — project preview"></figure>
+      <figure class="p-fig"><img loading="lazy" src="${p.img}" alt="${p.name} — live site preview"></figure>
     </div></div></div>
   </article>`).join('');
 
@@ -681,11 +888,11 @@ addEventListener('keydown',e=>{if(e.key==='Escape'){closeLB();setMenu(false);}})
       if(open)pv.classList.remove('show');
     });
     row.querySelector('.view').addEventListener('click',()=>
-      openLB('https://picsum.photos/seed/'+row.dataset.seed+'/1400/900.jpg',row.dataset.name+' — PROJECT PREVIEW'));
+      openLB(row.dataset.img,row.dataset.name+' — LIVE SITE'));
     if(fine){
       head.addEventListener('pointerenter',()=>{
         if(row.classList.contains('open'))return;
-        pvImg.src='https://picsum.photos/seed/'+row.dataset.seed+'/480/340.jpg';
+        pvImg.src=row.dataset.img;
         pv.classList.add('show');
       });
       head.addEventListener('pointerleave',()=>pv.classList.remove('show'));
@@ -694,89 +901,137 @@ addEventListener('keydown',e=>{if(e.key==='Escape'){closeLB();setMenu(false);}})
 })();
 
 /* =====================================================
-   GLYPH COMPOSER — 4 LED zones + Web Audio synth
+   SKILLS — segmented level meters
    ==================================================== */
 (function(){
-  const zoneEls={};
-  document.querySelectorAll('.zone').forEach(g=>{
-    const k=g.dataset.z;
-    zoneEls[k]={led:g.querySelector('.led')};
-    g.querySelector('.hit').addEventListener('click',()=>{flash(k);beep(NOTES[k],0,.12);});
-  });
-  const NOTES={a:329.63,b:392.00,c:493.88,d:587.33};
+  const LEVEL={3:'ADVANCED',2:'INTERMEDIATE',1:'BASIC'};
+  $('#skillList').innerHTML=SKILLS.map((s,i)=>`
+    <div class="sk rv" style="--d:${(i*0.045).toFixed(2)}s">
+      <span class="s-n">${s.n}</span>
+      <span class="s-l">${LEVEL[s.l]}</span>
+      <span class="segs">${[1,2,3].map(k=>'<i class="'+(k<=s.l?'on':'')+'"></i>').join('')}</span>
+    </div>`).join('');
+})();
 
-  let timers=[],soundOn=true,actx=null;
-  const at=(t,fn)=>timers.push(setTimeout(fn,t));
-  const on=k=>zoneEls[k].led.classList.add('on');
-  const off=k=>zoneEls[k].led.classList.remove('on');
-  const allOn=()=>Object.keys(zoneEls).forEach(on);
-  const allOff=()=>Object.keys(zoneEls).forEach(off);
-  function flash(k,dur=140){on(k);at(dur,()=>off(k));}
+/* =====================================================
+   EXPERIENCE — expandable career rows
+   ==================================================== */
+(function(){
+  $('#xpList').innerHTML=EXPERIENCE.map((x,i)=>`
+  <article class="xp rv" style="--d:${(i*0.04).toFixed(2)}s">
+    <button class="xp-head" aria-expanded="false">
+      <span class="xp-when">${x.when} · ${x.dur}${x.now?'<span class="badge">CURRENT</span>':''}</span>
+      <span class="xp-role">${x.role}</span>
+      <span class="xp-where">${x.org} — ${x.city}</span>
+      <span class="xp-x"><i data-lucide="plus"></i></span>
+    </button>
+    <div class="xp-body"><div class="xp-inner"><div class="xp-c">
+      ${x.desc?'<p class="xp-desc">'+x.desc+'</p>':''}
+      <ul>${x.bullets.map(b=>'<li>'+b+'</li>').join('')}</ul>
+      ${x.tags?'<div class="xp-tags">'+x.tags.map(t=>'<span>'+t+'</span>').join('')+'</div>':''}
+    </div></div></div>
+  </article>`).join('');
 
-  function stopAll(){
-    timers.forEach(clearTimeout);timers=[];
-    allOff();
-    const d=zoneEls.d.led;
-    d.style.transition='none';d.style.strokeDashoffset=0;
-  }
-
-  function beep(freq,when=0,dur=.12){
-    if(!soundOn)return;
-    try{
-      if(!actx)actx=new (window.AudioContext||window.webkitAudioContext)();
-      if(actx.state==='suspended')actx.resume();
-      const t=actx.currentTime+when;
-      const o=actx.createOscillator(),g=actx.createGain();
-      o.type='square';o.frequency.value=freq;
-      g.gain.setValueAtTime(0.0001,t);
-      g.gain.exponentialRampToValueAtTime(0.055,t+.012);
-      g.gain.exponentialRampToValueAtTime(0.0001,t+dur);
-      o.connect(g).connect(actx.destination);
-      o.start(t);o.stop(t+dur+.05);
-    }catch(e){}
-  }
-
-  const PATTERNS={
-    ping(){
-      at(0,()=>{flash('b',120);beep(880,0,.1);});
-      at(240,()=>{flash('b',170);beep(1174.66,0,.13);});
-    },
-    ring(){
-      const seq=[['a',329.63],['b',392],['c',493.88],['d',587.33],['b',392],['c',493.88],['d',659.25],['a',880]];
-      seq.forEach((s,i)=>at(i*150,()=>{flash(s[0],130);beep(s[1],0,.11);}));
-      at(1330,()=>{allOn();beep(1318.51,0,.3);});
-      at(1680,allOff);
-    },
-    sweep(){
-      const seq=[['a',392],['b',493.88],['c',587.33],['d',659.25],['c',783.99],['b',880]];
-      seq.forEach((s,i)=>at(i*110,()=>{flash(s[0],100);beep(s[1],0,.08);}));
-    },
-    charge(){
-      const d=zoneEls.d.led;
-      d.style.transition='none';d.style.strokeDashoffset=100;
-      d.getBoundingClientRect(); // force style flush
-      on('d');
-      requestAnimationFrame(()=>requestAnimationFrame(()=>{
-        d.style.transition='stroke-dashoffset 1.5s cubic-bezier(.3,0,.2,1)';
-        d.style.strokeDashoffset=0;
-      }));
-      [392,493.88,587.33,698.46,880].forEach((f,i)=>at(150+i*280,()=>beep(f,0,.07)));
-      at(1750,()=>{allOn();beep(1046.5,0,.35);});
-      at(2120,()=>{d.style.transition='none';d.style.strokeDashoffset=0;allOff();});
-    }
-  };
-
-  document.querySelectorAll('[data-pat]').forEach(btn=>
-    btn.addEventListener('click',()=>{stopAll();PATTERNS[btn.dataset.pat]();}));
-
-  const sw=$('#soundSw');
-  sw.addEventListener('click',()=>{
-    soundOn=!soundOn;
-    sw.classList.toggle('on',soundOn);
-    sw.setAttribute('aria-pressed',soundOn);
-    if(soundOn)beep(659.25,0,.09);
+  document.querySelectorAll('#xpList .xp').forEach(x=>{
+    const h=x.querySelector('.xp-head');
+    h.addEventListener('click',()=>h.setAttribute('aria-expanded',x.classList.toggle('open')));
   });
 })();
+
+  /* =====================================================
+     GLYPH COMPOSER — 4 LED zones + Web Audio synth
+     ==================================================== */
+  (function(){
+    const zoneEls={};
+    const NOTES={a:329.63,b:392.00,c:493.88,d:587.33};
+    document.querySelectorAll('.zone').forEach(g=>{
+      const k=g.dataset.z;
+      zoneEls[k]={led:g.querySelector('.led')};
+      const play=()=>{stopAll();flash(k);beep(NOTES[k],0,.12);};
+      g.addEventListener('click',play);
+      g.addEventListener('keydown',e=>{
+        if(e.key==='Enter'||e.key===' '){e.preventDefault();play();}
+      });
+    });
+
+    let timers=[],soundOn=true,actx=null;
+    const at=(t,fn)=>timers.push(setTimeout(fn,t));
+    const on=k=>zoneEls[k].led.classList.add('on');
+    const off=k=>zoneEls[k].led.classList.remove('on');
+    const allOn=()=>Object.keys(zoneEls).forEach(on);
+    const allOff=()=>Object.keys(zoneEls).forEach(off);
+    function flash(k,dur=140){on(k);at(dur,()=>off(k));}
+
+    function stopAll(){
+      timers.forEach(clearTimeout);timers=[];
+      allOff();
+      const d=zoneEls.d.led;
+      d.style.transition='none';d.style.strokeDashoffset=0;
+    }
+
+    function beep(freq,when=0,dur=.12){
+      if(!soundOn)return;
+      try{
+        const AudioContextClass=window.AudioContext||window.webkitAudioContext;
+        if(!AudioContextClass)return;
+        if(!actx)actx=new AudioContextClass();
+        if(actx.state==='suspended')actx.resume();
+        const t=actx.currentTime+when;
+        const o=actx.createOscillator(),g=actx.createGain();
+        o.type='square';o.frequency.value=freq;
+        g.gain.setValueAtTime(0.0001,t);
+        g.gain.exponentialRampToValueAtTime(0.055,t+.012);
+        g.gain.exponentialRampToValueAtTime(0.0001,t+dur);
+        o.connect(g).connect(actx.destination);
+        o.start(t);o.stop(t+dur+.05);
+      }catch(e){}
+    }
+
+    const PATTERNS={
+      ping(){
+        at(0,()=>{flash('b',120);beep(880,0,.1);});
+        at(240,()=>{flash('b',170);beep(1174.66,0,.13);});
+      },
+      ring(){
+        const seq=[['a',329.63],['b',392],['c',493.88],['d',587.33],['b',392],['c',493.88],['d',659.25],['a',880]];
+        seq.forEach((s,i)=>at(i*150,()=>{flash(s[0],130);beep(s[1],0,.11);}));
+        at(1330,()=>{allOn();beep(1318.51,0,.3);});
+        at(1680,allOff);
+      },
+      sweep(){
+        const seq=[['a',392],['b',493.88],['c',587.33],['d',659.25],['c',783.99],['b',880]];
+        seq.forEach((s,i)=>at(i*110,()=>{flash(s[0],100);beep(s[1],0,.08);}));
+      },
+      charge(){
+        const d=zoneEls.d.led;
+        d.style.transition='none';d.style.strokeDashoffset=100;
+        d.getBoundingClientRect();
+        on('d');
+        requestAnimationFrame(()=>requestAnimationFrame(()=>{
+          d.style.transition='stroke-dashoffset 1.5s cubic-bezier(.3,0,.2,1)';
+          d.style.strokeDashoffset=0;
+        }));
+        [392,493.88,587.33,698.46,880].forEach((f,i)=>at(150+i*280,()=>beep(f,0,.07)));
+        at(1750,()=>{allOn();beep(1046.5,0,.35);});
+        at(2120,()=>{d.style.transition='none';d.style.strokeDashoffset=0;allOff();});
+      }
+    };
+
+    document.querySelectorAll('[data-pat]').forEach(btn=>
+      btn.addEventListener('click',()=>{
+        stopAll();
+        const pattern=PATTERNS[btn.dataset.pat];
+        if(pattern)pattern();
+      }));
+
+    const sw=$('#soundSw');
+    sw.addEventListener('click',()=>{
+      soundOn=!soundOn;
+      sw.classList.toggle('on',soundOn);
+      sw.setAttribute('aria-pressed',String(soundOn));
+      if(soundOn)beep(659.25,0,.09);
+    });
+  })();
 
 /* ============ reveal on scroll ============ */
 const io=new IntersectionObserver(es=>es.forEach(e=>{
